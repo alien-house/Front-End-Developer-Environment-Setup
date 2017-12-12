@@ -8,9 +8,8 @@ const eslint = require('gulp-eslint');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const sass = require('gulp-sass');
-const webpackStream = require("webpack-stream");//webpackをgulpで使用する為のプラグインです(※)。
+const webpackStream = require("webpack-stream");
 const webpack = require("webpack");
-// webpackの設定ファイルの読み込み
 const webpackConfig = require("./webpack.config");
 
 gulp.task('clean', function() {
